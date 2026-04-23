@@ -9,7 +9,7 @@ cd $release_dir
 ls -R
 # extract servers
 mkdir servers
-for arch in win-x64_noavx linux-x64_noavx osx-arm64_no-acc osx-x64_no-acc;do
+for arch in win-x64_vulkan osx-arm64_acc;do
     unzip -o $arch.zip/$arch.zip -d servers llamalib*server*
 done
 chmod a+x servers/*
