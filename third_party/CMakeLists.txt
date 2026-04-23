@@ -116,7 +116,9 @@ file(COPY ${LLAMA_CPP_ROOT}/vendor/nlohmann/json.hpp DESTINATION ${CMAKE_SOURCE_
 file(COPY ${LLAMA_CPP_ROOT}/vendor/cpp-httplib/httplib.h DESTINATION ${CMAKE_SOURCE_DIR}/include)
 
 set(PUBLIC_ASSETS
-    index.html.gz
+    index.html
+    bundle.js
+    bundle.css
     loading.html
 )
 
